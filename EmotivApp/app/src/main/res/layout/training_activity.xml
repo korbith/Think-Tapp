@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".Training" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4d4d4d" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="Think Tapp"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:background="#607D8B"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reProcess"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
+        <ProgressBar
+            android:id="@+id/ProgressBarpower"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:background="#22000000"
+            android:progressDrawable="@drawable/verticalprogressbar"
+            android:layout_below="@+id/progressBarTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/bodySelect" />
+
+        <ProgressBar
+            android:id="@+id/progressBarTime"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#22000000"
+            android:progressDrawable="@drawable/horizentalbar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/bodySelect"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="#607D8B"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <com.emotiv.spinner.CustomSpinner
+                android:id="@+id/spinnerAction"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="#37474F"
+                android:dropDownSelector="#37474F"
+                android:visibility="visible"
+                android:focusableInTouchMode="false"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btClearData"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:text="Clear"
+                android:textColor="#ffffff"
+                android:background="#37474F" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:background="#607D8B" >
+
+        <Button
+            android:id="@+id/btstartTraing"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#37474F"
+            android:enabled="true"
+            android:text="Train"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

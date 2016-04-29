@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Corbin\Desktop\EmotivApp-ITCapstone\EmotivApp\app\libs\bedk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1ff0f8b969c69460d1410d2977c79ea5bcc8025b">
+        <dex dex="C:\Users\Corbin\Desktop\EmotivApp-ITCapstone\EmotivApp\app\build\intermediates\pre-dexed\debug\bedk-a357cb50bdc7248388683064b75dfc8ce76807e8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Corbin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Corbin\Desktop\EmotivApp-ITCapstone\EmotivApp\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-592e1969fa48307bba9c1839e698741892098dcb.jar" />
+    </item>
+
+</items>

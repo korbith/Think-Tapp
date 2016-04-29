@@ -1,0 +1,139 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".UserCreation"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4d4d4d" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="Think Tapp"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:background="#607D8B"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#ffffff"
+        android:layout_weight="0.84"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:textColor="#797878"
+            android:textSize="20dp"
+            android:fontFamily="Arial "
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:textStyle="bold"
+            android:layout_margin="20dp" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:textColor="#797878"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:textColor="#797878"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:textColor="#797878"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Age" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select: "
+            android:textColor="#797878"
+            android:textSize="18dp"
+            android:fontFamily="Arial "
+            android:focusable="false"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radioButton"
+                android:checked="false"
+                android:textColor="#797878" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:textColor="#797878" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="26.39">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclickCreate"
+        android:text="Create"
+        android:background="#607D8B"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_weight="0.19" />
+
+</LinearLayout>
